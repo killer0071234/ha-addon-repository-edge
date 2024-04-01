@@ -1,4 +1,4 @@
-# ha-addon-repository
+# ha-addon-repository-edge
 
 Addons for [http://home-assistant.io](http://home-assistant.io)
 
