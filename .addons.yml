@@ -1,0 +1,7 @@
+---
+channel: edge
+addons:
+  cybroscgiserver:
+    repository: killer0071234/addon-cybroscgiserver
+    image: ghcr.io/killer0071234/cybroscgiserver/{arch}
+    target: cybroscgiserver
