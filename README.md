@@ -80,10 +80,10 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-[addon-cybroscgiserver]: https://github.com/killer0071234/hassio-cybroscgiserver/tree/f0f218a
-[addon-doc-cybroscgiserver]: https://github.com/killer0071234/hassio-cybroscgiserver/blob/f0f218a/README.md
+[addon-cybroscgiserver]: https://github.com/killer0071234/hassio-cybroscgiserver/tree/bfbe2d7
+[addon-doc-cybroscgiserver]: https://github.com/killer0071234/hassio-cybroscgiserver/blob/bfbe2d7/README.md
 [cybroscgiserver-issue]: https://github.com/killer0071234/hassio-cybroscgiserver/issues
-[cybroscgiserver-version-shield]: https://img.shields.io/badge/version-f0f218a-blue.svg
+[cybroscgiserver-version-shield]: https://img.shields.io/badge/version-bfbe2d7-blue.svg
 [cybroscgiserver-aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg
 [cybroscgiserver-amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg
 [cybroscgiserver-armhf-shield]: https://img.shields.io/badge/armhf-yes-green.svg
