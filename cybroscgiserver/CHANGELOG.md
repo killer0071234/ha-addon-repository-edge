@@ -1,4 +1,10 @@
 # Changelog since v0.2.2
+- Merge pull request #12 from killer0071234/documentation-240404
+
+Update documentation 
+- Update readme 
+- Add new line 
+- Update documentation 
 - Merge pull request #11 from killer0071234/killer0071234-patch-1
 
 Add codenotary 

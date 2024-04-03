@@ -1,4 +1,4 @@
-version: bfbe2d7
+version: 7e34052
 slug: cybroscgiserver
 name: CybroScgiServer
 description: SCGI serer to communicate to PLCs from Cybrotech / Robotina
