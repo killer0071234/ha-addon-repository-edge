@@ -6,7 +6,7 @@
 
 Addons for [http://home-assistant.io](http://home-assistant.io)
 
-Created by @killer0071234.
+Created by [Daniel Gangl][killer0071234].
 
 ## WARNING! THIS IS AN EDGE REPOSITORY
 
@@ -48,19 +48,45 @@ SCGI serer to communicate to PLCs from Cybrotech / Robotina
 
 ## Releases
 
-Releases are based on [Semantic Versioning][semver], and use the format
-of ``MAJOR.MINOR.PATCH``. In a nutshell, the version will be incremented
-based on the following:
+Add-on releases are **NOT** based on [Semantic Versioning][semver], unlike
+all our other repositories. The latest build commit SHA hash of each
+add-on, represents the version number.
 
-- ``MAJOR``: Incompatible or major changes.
-- ``MINOR``: Backwards-compatible new features and enhancements.
-- ``PATCH``: Backwards-compatible bugfixes and package updates.
+## Support
+
+Got questions?
+
+You could open an issue here on GitHub. Note, we use a separate
+GitHub repository for each add-on. Please ensure you are creating the issue
+on the correct GitHub repository matching the add-on.
+
+- [Open an issue for the add-on: CybroScgiServer][cybroscgiserver-issue]
+
+For a general repository issue or add-on ideas [open an issue here][issue]
+
+## Contributing
+
+This is an active open-source project. We are always open to people who want to
+use the code or contribute to it.
+
+We have set up a separate document containing our
+[contribution guidelines](CONTRIBUTING.md).
+
+Thank you for being involved! :heart_eyes:
+
+## Adding a new add-on
+
+We are currently not accepting third party add-ons to this repository.
+
+For questions, please contact [Daniel Gangl][killer0071234]:
+
+- Drop him an email: killer007@gmx.at
 
 ## License
 
 MIT License
 
-Copyright (c) 2017-2024 Franck Nijhof
+Copyright (c) 2022-2024 Daniel Gangl
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -80,6 +106,10 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
+## Credits
+
+Code template was mainly from [hassio-repo][hassio-repo]
+
 [addon-cybroscgiserver]: https://github.com/killer0071234/hassio-cybroscgiserver/tree/bfbe2d7
 [addon-doc-cybroscgiserver]: https://github.com/killer0071234/hassio-cybroscgiserver/blob/bfbe2d7/README.md
 [cybroscgiserver-issue]: https://github.com/killer0071234/hassio-cybroscgiserver/issues
@@ -90,6 +120,10 @@ SOFTWARE.
 [cybroscgiserver-armv7-shield]: https://img.shields.io/badge/armv7-yes-green.svg
 [cybroscgiserver-i386-shield]: https://img.shields.io/badge/i386-yes-green.svg
 
+[hassio-repo]: https://github.com/hassio-addons/repository-edge
 [license-shield]: https://img.shields.io/github/license/killer0071234/ha-addon-repository-edge.svg
 [maintenance-shield]: https://img.shields.io/maintenance/yes/2024.svg
-[project-stage-shield]: https://img.shields.io/badge/project%20stage-production%20ready-brightgreen.svg
+[project-stage-shield]: https://img.shields.io/badge/project%20stage-experimental-yellow.svg
+[killer0071234]: https://github.com/killer0071234
+[issue]: https://github.com/killer0071234/ha-addon-repository-edge/issues
+[semver]: http://semver.org/spec/v2.0.0.html
