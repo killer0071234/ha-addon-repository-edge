@@ -33,7 +33,7 @@ If you are more interested in stable releases of our add-ons:
 
 [maintenance-shield]: https://img.shields.io/maintenance/yes/2024.svg
 [project-stage-shield]: https://img.shields.io/badge/project%20stage-production%20ready-brightgreen.svg
-[release-shield]: https://img.shields.io/badge/version-552b69f-blue.svg
-[release]: https://github.com/killer0071234/hassio-cybroscgiserver/tree/552b69f
+[release-shield]: https://img.shields.io/badge/version-75b8040-blue.svg
+[release]: https://github.com/killer0071234/hassio-cybroscgiserver/tree/75b8040
 [addon-repo-install]: https://github.com/killer0071234/ha-addon-repository#installation
 [cybrotech]: https://cybrotech.com/

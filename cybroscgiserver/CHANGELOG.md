@@ -1,4 +1,8 @@
 # Changelog since v0.2.2
+- Merge pull request #15 from killer0071234/update-dep-scgi-server-1
+
+Update requirements.txt file for scgi server 
+- Update requirements.txt file for scgi server 
 - Merge pull request #14 from killer0071234/changelog-for-0-2-3
 
 Add changelog for 0.2.3 
