@@ -1,4 +1,8 @@
 # Changelog since v0.2.2
+- Merge pull request #14 from killer0071234/changelog-for-0-2-3
+
+Add changelog for 0.2.3 
+- Add changelog for 0.2.3 
 - Merge pull request #13 from killer0071234/update-base-image-16-3
 
 Update repo to base 16.3.2 
