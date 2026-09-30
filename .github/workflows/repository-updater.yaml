@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: 🚀 Run Repository Updater
-        uses: killer0071234/repository-updater@git-user-git-email
+        uses: killer0071234/repository-updater@main
         with:
           addon: ${{ github.event.client_payload.addon }}
           repository: ${{ github.repository }}
