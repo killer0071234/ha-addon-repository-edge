@@ -6,7 +6,7 @@ on:
     types: ["update"]
 jobs:
   workflows:
-    name: Publish add-on update
+    name: Publish app update
     runs-on: ubuntu-latest
     steps:
       - name: 🚀 Run Repository Updater
