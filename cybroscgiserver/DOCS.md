@@ -1,27 +1,64 @@
-# Home Assistant Community Add-on: Cybro Scgi Server
+# Home Assistant Community App: Cybro Scgi Server
 
 Communication gateway between Home Assistant and cybro PLCs.
-Based on CybroScgiSerer v3.1.3.
+Based on CybroScgiServer v3.3.1.
 
 ## Installation
 
-The installation of this add-on is pretty straightforward and not different in
-comparison to installing any other Home Assistant add-on.
+The installation of this app is pretty straightforward and not different in
+comparison to installing any other Home Assistant app.
 
-1. Click the Home Assistant My button below to open the add-on on your Home
+1. Click the Home Assistant My button below to open the app on your Home
    Assistant instance.
 
-   [![Open this add-on in your Home Assistant instance.][addon-badge]][addon]
+   [![Open this app in your Home Assistant instance.][addon-badge]][addon]
 
-1. Click the "Install" button to install the add-on.
-1. Start the "CybroScgiServer" add-on
-1. Check the logs of the "CybroScgiServer" add-on to see if everything went well.
+1. Click the "Install" button to install the app.
+1. Start the "CybroScgiServer" app
+1. Check the logs of the "CybroScgiServer" app to see if everything went well.
 
 ## Configuration
 
-**Note**: _Remember to restart the add-on when the configuration is changed._
+**Note**: _Remember to restart the app when the configuration is changed._
 
-To add / change controllers edit the `cybroscgiserver_config.ini` file in your config folder.
+### Option: `configuration_file` (required)
+
+This option allows you to specify the a specific name for the scgi server config file.
+If this file does not exist, it will be created during the first startup of that integration.
+The default name of that file is `cybroscgiserver_config.ini`.
+
+### Option: `autodetect_address` (optional)
+
+The `autodetect_address` option is by default empty.
+autodetect (broadcast) ip address in network (eg. ip 192.168.1.33 mask 255.255.255.0 -> autodetect address is 192.168.1.255).
+Only nessesary if autodetect is not working.See section for manual controller configuration.
+
+### Option: `push_enabled` (optional)
+
+Enables or disables the builtin push server.
+Receive and acknowledge push messages sent by controllers
+
+### Option: `verbose_level` (optional)
+
+The `verbose_level` option controls the level of log output by the app and can
+be changed to be more or less verbose, which might be useful when you are
+dealing with an unknown issue. Possible values are:
+
+- `DEBUG`: Shows detailed debug information.
+- `INFO`: Normal (usually) interesting events.
+- `WARNING`: Exceptional occurrences that are not errors.
+- `ERROR`: Runtime errors that do not require immediate action.
+- `CRITICAL`: Something went terribly wrong. App becomes unusable.
+
+Please note that each level automatically includes log messages from a
+more severe level, e.g., `DEBUG` also shows `INFO` messages. By default,
+the `verbose_level` is set to `ERROR`, which is the recommended setting unless
+you are troubleshooting.
+These log level also affects the log levels of cybro scgi server.
+
+### Manual controller configuration (optional)
+
+To add a manual controller, edit the `cybroscgiserver_config.ini` file in your app config folder.
 
 Example controller configuration entry for one controller (at the end of the file):
 
@@ -34,57 +71,62 @@ password =
 
 **Note**: _Even if you don't use password on the controller you need the empty entry `password =`._
 
-### Option: `configuration_file`
+## Troubleshooting
 
-This option allows you to specify the a specific name for the scgi server config file.
-If this file does not exist, it will be created during the first startup of that integration.
-The default name of that file is `cybroscgiserver_config.ini`.
+### Check the log
 
-### Option: `autodetect_address`
+Open the **Log** tab of the app. After a normal start you should see the
+server listening on UDP port 8442 and TCP port 4000.
 
-The `autodetect_address` option should be set to the broadcast address of the local network.
-autodetect (broadcast) ip address in network (eg. ip 192.168.1.33 mask 255.255.255.0 -> autodetect address is 192.168.1.255).
+For more details, set `verbose_level` to `DEBUG`, restart the app and check
+the log again. Set it back to `ERROR` when you are done, `DEBUG` creates a lot
+of output.
 
-### Option: `request_period_s`
+### Check that the server answers
 
-`request_period_s` is an intermediate time, smaller than `valid_period_s`, in which
-value is still returned from cache, but read request is sent, and the answer is
-used to update the cache.
-The option is set in seconds.
+Open this address in a browser (replace the IP with the one of your Home
+Assistant):
 
-### Option: `valid_period_s`
+```text
+http://192.168.0.2:4000/?sys.server_version
+```
 
-`valid_period_s` defines cache validity time. When cache expires, read is
-performed directly from controller, waiting for the answer.
-The option is set in seconds.
+The server replies with a short XML document that contains its version. If
+the page does not load, the app is not running or port 4000 is blocked.
 
-### Option: `cleanup_period_s`
+To check a controller, replace `c1000` with your controller's
+serial number:
 
-`cleanup_period_s` defines the period when invalidated items will be removed from
-cache.
-The option is set in seconds.
+```text
+http://192.168.0.2:4000/?c1000.sys.plc_status
+```
 
-### Option: `verbose_level`
+The value is `ok` when the controller is reachable and running. `offline`
+means the server can't reach the controller, see [Ports](#ports) and
+[No controllers found](#no-controllers-found).
 
-The `verbose_level` option controls the level of log output by the addon and can
-be changed to be more or less verbose, which might be useful when you are
-dealing with an unknown issue. Possible values are:
+### Ports
 
-- `DEBUG`: Shows detailed debug information.
-- `INFO`: Normal (usually) interesting events.
-- `WARNING`: Exceptional occurrences that are not errors.
-- `ERROR`: Runtime errors that do not require immediate action.
-- `CRITICAL`: Something went terribly wrong. Add-on becomes unusable.
+The app uses the host network and needs these ports:
 
-Please note that each level automatically includes log messages from a
-more severe level, e.g., `DEBUG` also shows `INFO` messages. By default,
-the `verbose_level` is set to `ERROR`, which is the recommended setting unless
-you are troubleshooting.
-These log level also affects the log levels of cybro scgi server.
+- `4000/tcp`: requests from the Home Assistant integration.
+- `8442/udp`: communication with the controllers (including push messages).
+
+The controllers must be able to reach your Home Assistant on UDP port 8442. If
+they are in another network or behind a firewall, allow this port.
+
+### No controllers found
+
+Autodetect uses a broadcast in your local network. If no controller is found:
+
+1. Set `autodetect_address` to the broadcast address of the network where the
+   controllers are (e.g. `192.168.1.255`).
+1. If that doesn't help, add the controller manually, see
+   [Manual controller configuration](#manual-controller-configuration-optional).
 
 ## Known issues and limitations
 
-- This add-on does not support controller connections via can bus.
+- This app does not support controller connections via can bus.
 
 ## Changelog & Releases
 
@@ -140,5 +182,5 @@ SOFTWARE.
 [addon]: https://my.home-assistant.io/redirect/supervisor_addon/?addon=85493909_cybroscgiserver&repository_url=https%3A%2F%2Fgithub.com%2Fkiller0071234%2Fha-addon-repository
 [killer0071234]: https://github.com/killer0071234
 [issue]: https://github.com/killer0071234/ha-addon-repository/issues
-[releases]: hhttps://github.com/killer0071234/ha-addon-repository/releases
-[semver]: http://semver.org/spec/v2.0.0.htm
+[releases]: https://github.com/killer0071234/ha-addon-repository/releases
+[semver]: http://semver.org/spec/v2.0.0.html
