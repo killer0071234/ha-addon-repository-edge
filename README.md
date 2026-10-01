@@ -49,7 +49,7 @@ https://github.com/killer0071234/ha-addon-repository-edge
 ![Supports amd64 Architecture][cybroscgiserver-amd64-shield]
 ![Supports i386 Architecture][cybroscgiserver-i386-shield]
 
-SCGI serer to communicate to PLCs from Cybrotech / Robotina
+SCGI server to communicate to PLCs from Cybrotech / Robotina
 
 [:books: CybroScgiServer app documentation][addon-doc-cybroscgiserver]
 
@@ -123,9 +123,9 @@ Code template was mainly from [hassio-repo][hassio-repo]
 [cybroscgiserver-version-shield]: https://img.shields.io/badge/version-75b8040-blue.svg
 [cybroscgiserver-aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg
 [cybroscgiserver-amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg
-[cybroscgiserver-armhf-shield]: https://img.shields.io/badge/armhf-yes-green.svg
-[cybroscgiserver-armv7-shield]: https://img.shields.io/badge/armv7-yes-green.svg
-[cybroscgiserver-i386-shield]: https://img.shields.io/badge/i386-yes-green.svg
+[cybroscgiserver-armhf-shield]: https://img.shields.io/badge/armhf-no-red.svg
+[cybroscgiserver-armv7-shield]: https://img.shields.io/badge/armv7-no-red.svg
+[cybroscgiserver-i386-shield]: https://img.shields.io/badge/i386-no-red.svg
 
 [hassio-repo]: https://github.com/hassio-addons/repository-edge
 [license-shield]: https://img.shields.io/github/license/killer0071234/ha-addon-repository-edge.svg
