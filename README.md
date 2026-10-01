@@ -1,17 +1,17 @@
-# EDGE - Home Assistant Community Add-ons
+# EDGE - Home Assistant Community Apps
 
 ![Project Stage][project-stage-shield]
 ![Maintenance][maintenance-shield]
 [![License][license-shield]](LICENSE.md)
 
-Addons for [http://home-assistant.io](http://home-assistant.io)
+Apps for [http://home-assistant.io](http://home-assistant.io)
 
 Created by [Daniel Gangl][killer0071234].
 
 ## WARNING! THIS IS AN EDGE REPOSITORY
 
-This Home Assistant Add-ons repository contains edge builds of add-ons. Edge
-builds add-ons are based upon the latest development version.
+This Home Assistant Apps repository contains edge builds of apps. Edge
+builds of apps are based upon the latest development version.
 
 - They may not work at all.
 - They might stop working at any time.
@@ -20,25 +20,25 @@ builds add-ons are based upon the latest development version.
 This repository was created for:
 
 - Anybody willing to test.
-- Anybody interested in trying out upcoming add-ons or add-on features.
+- Anybody interested in trying out upcoming apps or app features.
 - Developers.
 
-If you are more interested in stable releases of our add-ons:
+If you are more interested in stable releases of our apps:
 
 <https://github.com/killer0071234/ha-addon-repository>
 
 # Installation
 Simply click this button:
 
-[![Open your Home Assistant instance and show the add add-on repository dialog with a specific repository URL pre-filled.](https://my.home-assistant.io/badges/supervisor_add_addon_repository.svg)](https://my.home-assistant.io/redirect/supervisor_add_addon_repository/?repository_url=https%3A%2F%2Fgithub.com%2Fkiller0071234%2Fha-addon-repository-edge)
+[![Open your Home Assistant instance and show the add app repository dialog with a specific repository URL pre-filled.](https://my.home-assistant.io/badges/supervisor_add_addon_repository.svg)](https://my.home-assistant.io/redirect/supervisor_add_addon_repository/?repository_url=https%3A%2F%2Fgithub.com%2Fkiller0071234%2Fha-addon-repository-edge)
 
-or to install manually simply add this to Home Assistant Add-on repository:
+or to install manually simply add this to Home Assistant App repository:
 
 ```txt
 https://github.com/killer0071234/ha-addon-repository-edge
 ```
 
-## Add-ons provided by this repository
+## Apps provided by this repository
 
 ### &#10003; [CybroScgiServer][addon-cybroscgiserver]
 
@@ -51,25 +51,25 @@ https://github.com/killer0071234/ha-addon-repository-edge
 
 SCGI serer to communicate to PLCs from Cybrotech / Robotina
 
-[:books: CybroScgiServer add-on documentation][addon-doc-cybroscgiserver]
+[:books: CybroScgiServer app documentation][addon-doc-cybroscgiserver]
 
 ## Releases
 
-Add-on releases are **NOT** based on [Semantic Versioning][semver], unlike
+App releases are **NOT** based on [Semantic Versioning][semver], unlike
 all our other repositories. The latest build commit SHA hash of each
-add-on, represents the version number.
+app, represents the version number.
 
 ## Support
 
 Got questions?
 
 You could open an issue here on GitHub. Note, we use a separate
-GitHub repository for each add-on. Please ensure you are creating the issue
-on the correct GitHub repository matching the add-on.
+GitHub repository for each app. Please ensure you are creating the issue
+on the correct GitHub repository matching the app.
 
-- [Open an issue for the add-on: CybroScgiServer][cybroscgiserver-issue]
+- [Open an issue for the app: CybroScgiServer][cybroscgiserver-issue]
 
-For a general repository issue or add-on ideas [open an issue here][issue]
+For a general repository issue or app ideas [open an issue here][issue]
 
 ## Contributing
 
@@ -81,9 +81,9 @@ We have set up a separate document containing our
 
 Thank you for being involved! :heart_eyes:
 
-## Adding a new add-on
+## Adding a new app
 
-We are currently not accepting third party add-ons to this repository.
+We are currently not accepting third party apps to this repository.
 
 For questions, please contact [Daniel Gangl][killer0071234]:
 

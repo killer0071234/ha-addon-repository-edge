@@ -6,11 +6,11 @@ on:
     types: ["update"]
 jobs:
   workflows:
-    name: Publish add-on update
+    name: Publish app update
     runs-on: ubuntu-latest
     steps:
       - name: 🚀 Run Repository Updater
-        uses: killer0071234/repository-updater@git-user-git-email
+        uses: killer0071234/repository-updater@main
         with:
           addon: ${{ github.event.client_payload.addon }}
           repository: ${{ github.repository }}
