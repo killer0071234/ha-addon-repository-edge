@@ -17,6 +17,9 @@ jobs:
       - name: 🚀 Run Repository Updater
         uses: killer0071234/repository-updater@main
         with:
-          app: ${{ github.event.client_payload.addon }}
+          # app-deploy >= v4 sends "app", older versions sent "addon"
+          app: >-
+            ${{ github.event.client_payload.app
+            || github.event.client_payload.addon }}
           repository: ${{ github.repository }}
           token: ${{ secrets.UPDATER_TOKEN }}
