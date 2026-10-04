@@ -1,4 +1,4 @@
-version: 9a8eec1
+version: e68d471
 slug: cybroscgiserver
 name: CybroScgiServer
 description: SCGI server to communicate to PLCs from Cybrotech / Robotina

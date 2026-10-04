@@ -1,4 +1,8 @@
 # Changelog since v0.2.4
+- Merge pull request #32 from killer0071234/bugfix/clean-start
+
+Entferne leere .gitkeep-Dateien aus den Verzeichnissen alc und log 
+- Entferne leere .gitkeep-Dateien aus den Verzeichnissen alc und log 
 - Merge pull request #31 from killer0071234/bugfix/communication
 
 Add required folders 
