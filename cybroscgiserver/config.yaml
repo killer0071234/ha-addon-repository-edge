@@ -1,4 +1,4 @@
-version: 948b7a9
+version: 9a8eec1
 slug: cybroscgiserver
 name: CybroScgiServer
 description: SCGI server to communicate to PLCs from Cybrotech / Robotina
@@ -8,7 +8,6 @@ arch:
 - aarch64
 - amd64
 options:
-  push_enabled: true
   controllers: []
 schema:
   configuration_file: str?

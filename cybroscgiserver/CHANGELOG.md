@@ -1,4 +1,8 @@
 # Changelog since v0.2.4
+- Merge pull request #31 from killer0071234/bugfix/communication
+
+Add required folders 
+- Add required folders 
 - Merge pull request #29 from killer0071234/release-drafter-2610
 
 Füge Vorlagen für Namen und Tags in release-drafter.yml hinzu 
