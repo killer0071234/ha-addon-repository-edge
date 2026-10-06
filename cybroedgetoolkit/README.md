@@ -1,0 +1,43 @@
+# Home Assistant Community App: Cybro Edge Toolkit
+
+[![Release][release-shield]][release] ![Project Stage][project-stage-shield] ![Project Maintenance][maintenance-shield]
+
+Cybro Edge Toolkit from [Cybrotech][cybrotech].
+
+## About
+
+The Cybro Edge Toolkit connects PLCs from Cybrotech / Robotina to other
+systems. This app runs the Cybro Edge Toolkit from [Cybrotech][cybrotech]
+(scgi_server v3.3.1, mqtt_client v1.0.4, data_logger v3.2.4):
+
+- **SCGI server** – communicates with the controllers
+- **MQTT client** – publishes controller variables to an MQTT broker
+- **Data logger** – stores controller variables in a MySQL / MariaDB database
+
+See [repository readme][addon-repo-install] on how to install the cybro app in Home Assistant.
+
+## WARNING! THIS IS AN EDGE VERSION!
+
+This Home Assistant Apps repository contains edge builds of apps.
+Edge builds of apps are based upon the latest development version.
+
+- They may not work at all.
+- They might stop working at any time.
+- They could have a negative impact on your system.
+
+This repository was created for:
+
+- Anybody willing to test.
+- Anybody interested in trying out upcoming apps or app features.
+- Developers.
+
+If you are more interested in stable releases of our apps:
+
+<https://github.com/killer0071234/ha-addon-repository>
+
+[maintenance-shield]: https://img.shields.io/maintenance/yes/2026.svg
+[project-stage-shield]: https://img.shields.io/badge/project%20stage-experimental-yellow.svg
+[release-shield]: https://img.shields.io/badge/version-785809c-blue.svg
+[release]: https://github.com/killer0071234/hassio-cybroedgetoolkit/tree/785809c
+[addon-repo-install]: https://github.com/killer0071234/ha-addon-repository#installation
+[cybrotech]: https://cybrotech.com/
