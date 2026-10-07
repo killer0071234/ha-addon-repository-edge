@@ -1,3 +1,3 @@
-- Merge pull request #1 from killer0071234/feature/add-default-ports
+- Merge pull request #2 from killer0071234/bugfix/mqtt-startup-error
 
-Add default ports
+Fix MQTT startup fault

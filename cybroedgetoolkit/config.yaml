@@ -1,5 +1,5 @@
 name: Cybro Edge Toolkit
-version: 4c015e2
+version: ee36a2b
 slug: cybroedgetoolkit
 description: Cybrotech Cybro Edge Toolkit (SCGI server, MQTT client, data logger)
   for Cybro PLCs
