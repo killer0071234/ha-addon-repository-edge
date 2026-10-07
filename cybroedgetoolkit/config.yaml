@@ -1,5 +1,5 @@
 name: Cybro Edge Toolkit
-version: 785809c
+version: 4c015e2
 slug: cybroedgetoolkit
 description: Cybrotech Cybro Edge Toolkit (SCGI server, MQTT client, data logger)
   for Cybro PLCs
@@ -11,8 +11,8 @@ init: false
 startup: services
 host_network: true
 ports:
-  4000/tcp: null
-  8442/udp: null
+  4000/tcp: 4000
+  8442/udp: 8442
 ports_description:
   4000/tcp: SCGI server (used by MQTT client, data logger and 3rd party clients)
   8442/udp: Cybro controller communication (A-bus over UDP)
