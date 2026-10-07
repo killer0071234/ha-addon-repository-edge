@@ -152,7 +152,7 @@ Code template was mainly from [hassio-repo][hassio-repo]
 
 [hassio-repo]: https://github.com/hassio-addons/repository-edge
 [license-shield]: https://img.shields.io/github/license/killer0071234/ha-addon-repository-edge.svg
-[maintenance-shield]: https://img.shields.io/maintenance/yes/2024.svg
+[maintenance-shield]: https://img.shields.io/maintenance/yes/2026.svg
 [project-stage-shield]: https://img.shields.io/badge/project%20stage-experimental-yellow.svg
 [killer0071234]: https://github.com/killer0071234
 [issue]: https://github.com/killer0071234/ha-addon-repository-edge/issues
