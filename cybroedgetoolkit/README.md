@@ -37,7 +37,7 @@ If you are more interested in stable releases of our apps:
 
 [maintenance-shield]: https://img.shields.io/maintenance/yes/2026.svg
 [project-stage-shield]: https://img.shields.io/badge/project%20stage-experimental-yellow.svg
-[release-shield]: https://img.shields.io/badge/version-bacd975-blue.svg
-[release]: https://github.com/killer0071234/hassio-cybroedgetoolkit/tree/bacd975
+[release-shield]: https://img.shields.io/badge/version-32ce004-blue.svg
+[release]: https://github.com/killer0071234/hassio-cybroedgetoolkit/tree/32ce004
 [addon-repo-install]: https://github.com/killer0071234/ha-addon-repository#installation
 [cybrotech]: https://cybrotech.com/

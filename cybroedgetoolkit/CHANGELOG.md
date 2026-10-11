@@ -1,3 +1,3 @@
-- Merge pull request #4 from killer0071234/feature/cet-2026-10-09
+- Merge pull request #5 from killer0071234/chore/changelog-1.0.0
 
-Update Cybro Edge Toolkit to 2026-10-09
+Fold toolkit update into 1.0.0 changelog
