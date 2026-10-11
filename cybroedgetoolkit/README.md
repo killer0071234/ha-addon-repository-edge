@@ -8,7 +8,7 @@ Cybro Edge Toolkit from [Cybrotech][cybrotech].
 
 The Cybro Edge Toolkit connects PLCs from Cybrotech / Robotina to other
 systems. This app runs the Cybro Edge Toolkit from [Cybrotech][cybrotech]
-(scgi_server v3.3.1, mqtt_client v1.0.4, data_logger v3.2.4):
+(scgi_server v3.4.0, mqtt_client v1.0.4, data_logger v3.2.4):
 
 - **SCGI server** – communicates with the controllers
 - **MQTT client** – publishes controller variables to an MQTT broker
@@ -37,7 +37,7 @@ If you are more interested in stable releases of our apps:
 
 [maintenance-shield]: https://img.shields.io/maintenance/yes/2026.svg
 [project-stage-shield]: https://img.shields.io/badge/project%20stage-experimental-yellow.svg
-[release-shield]: https://img.shields.io/badge/version-ee36a2b-blue.svg
-[release]: https://github.com/killer0071234/hassio-cybroedgetoolkit/tree/ee36a2b
+[release-shield]: https://img.shields.io/badge/version-bacd975-blue.svg
+[release]: https://github.com/killer0071234/hassio-cybroedgetoolkit/tree/bacd975
 [addon-repo-install]: https://github.com/killer0071234/ha-addon-repository#installation
 [cybrotech]: https://cybrotech.com/

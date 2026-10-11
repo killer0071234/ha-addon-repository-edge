@@ -131,10 +131,10 @@ SOFTWARE.
 
 Code template was mainly from [hassio-repo][hassio-repo]
 
-[addon-cybroedgetoolkit]: https://github.com/killer0071234/hassio-cybroedgetoolkit/tree/ee36a2b
-[addon-doc-cybroedgetoolkit]: https://github.com/killer0071234/hassio-cybroedgetoolkit/blob/ee36a2b/README.md
+[addon-cybroedgetoolkit]: https://github.com/killer0071234/hassio-cybroedgetoolkit/tree/bacd975
+[addon-doc-cybroedgetoolkit]: https://github.com/killer0071234/hassio-cybroedgetoolkit/blob/bacd975/README.md
 [cybroedgetoolkit-issue]: https://github.com/killer0071234/hassio-cybroedgetoolkit/issues
-[cybroedgetoolkit-version-shield]: https://img.shields.io/badge/version-ee36a2b-blue.svg
+[cybroedgetoolkit-version-shield]: https://img.shields.io/badge/version-bacd975-blue.svg
 [cybroedgetoolkit-aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg
 [cybroedgetoolkit-amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg
 [cybroedgetoolkit-armhf-shield]: https://img.shields.io/badge/armhf-no-red.svg
